@@ -1,5 +1,8 @@
 //************* Henrique **********
-
+ // =========================================================
+    // SISTEMA DE REGISTRO E GESTÃO DE CONTAS BANCÁRIAS
+    // ETAPA 2 - 
+    // =========================================================
 
 
 #include <iostream>
@@ -44,6 +47,8 @@ int main()
         cin >> opcao;
 
         switch (opcao) {
+            
+            //********* 1- Cadastrar conta *******
 
             case 1:
 
@@ -82,7 +87,7 @@ int main()
 
             case 2:
 
-                // LISTAR CONTAS
+                // ******** 2- LISTAR CONTAS ******
                 for (int i = 0; i < quantidadeContas; i++) {
 
                     cout << "-------------------" << endl;
@@ -93,7 +98,10 @@ int main()
                 }
 
                 break;
-                
+
+
+                //********* 3-CONSULTAR CONTA ******
+
             case 3: {
 
                 int numero;
@@ -132,6 +140,8 @@ int main()
 
                 break;
             }
+
+            // *********** 4- DEPOSITO *****
 
             case 4: {
 
@@ -197,6 +207,9 @@ int main()
 
     break;
 }
+
+        //********** 5-Saque *********
+
      case 5: 
       {
 
@@ -266,6 +279,7 @@ int main()
     
     break;
 
+            // ******* 6- transferencia ********
     }
            case 6: {
 
@@ -355,6 +369,7 @@ int main()
 
         }
         
+            //*********** 7- Extrato Bancario ********
 
         case 7:{
             
@@ -402,6 +417,7 @@ int main()
 
     }
 
+            // ********** 8- saida (opçao invalida)
         
                 case 8:
                 cout << "Saindo..." << endl;
